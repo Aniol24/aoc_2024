@@ -39,7 +39,7 @@ def backtracking(numbers, array, max_num, index):
             solution_exists = True
         return
 
-    for i in range(1):
+    for i in range(2):
         array[index] = i
         if checkBacktracking(numbers, array, max_num, index):
             backtracking(numbers, array, max_num, index + 1)
